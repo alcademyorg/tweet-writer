@@ -1,0 +1,23 @@
+# Introduction
+
+A well-organized file structure is like a neatly arranged toolbox: it helps every team member quickly find what they need, whether they are coding new features or tweaking existing ones. In our project, which integrates Twitter authentication, tweet importation, AI-powered tweet generation, and even some optional communication features via Twilio, a clear file structure makes development and collaboration efficient. This document explains how we are laying out our project files based on our tech stack, making sure that every component has its proper place from the login page to AI analysis and user settings.
+
+# Overview of the Tech Stack
+
+We have selected a modern and powerful setup for our web application. On the frontend, we use Next.js 14 with an app router for server-side rendering, together with TypeScript for reliable type checking. Styling is handled by Tailwind CSS paired with shadcn for a modern UI that sticks to the blue branding guideline. The backend relies on Supabase, which takes care of authentication, database operations, and secure object storage. For Twitter integration, we use the twitter-api-v2 npm library to manage tweet data, and our AI capabilities come from the GPT-4o model, with a possibility to extend support to the openai o3-mini model in the future. This diverse tech stack influences our file structure, ensuring separation of concerns so that the front end remains clear and modular while the backend remains robust and secure.
+
+# Root Directory Structure
+
+At the root level, every file and folder has a distinct purpose to keep our project organized and accessible. The main directories include an “app” folder where the Next.js pages reside, a “components” directory for reusable UI pieces, and a “styles” folder for managing our Tailwind CSS customizations and global styles. We also include a “public” folder for static assets like images or icons. Beyond these, directories like “lib” or “utils” house helper functions and API integrations such as our Twitter API code or Supabase service calls. In addition, the root directory holds essential configuration files like package.json, tsconfig.json, a Next.js configuration file, and environment files, ensuring that the project setup is complete and well-documented.
+
+# Configuration and Environment Files
+
+This project relies on a set of configuration files that are essential for setting up the development and build environments. Files such as .env manage sensitive information like API keys and tokens, which are critical for accessing Twitter’s API, Supabase services, and even Twilio if needed. The package.json file defines our project’s dependencies and scripts, streamlining the build and deployment process. Additionally, a TypeScript configuration file (tsconfig.json) ensures that our code adheres to defined type rules, and the Next.js configuration file supports custom build settings. These configuration files not only control project behavior across different environments but also provide a reference for developers, ensuring consistency and reliability in project setup.
+
+# Documentation Structure
+
+Documentation is an integral part of any project as it provides guidance and clarity for both new and experienced team members. In our file structure, all detailed internal documentation is maintained in a dedicated directory, usually named “docs”. This area includes detailed project requirement documents, API contracts, and guidelines on coding standards and best practices. The documentation folder ensures that every change in the project is well noted and that knowledge is shared across the team. This organized approach to documentation supports quality assurance and helps new joiners get up to speed quickly on the project’s architecture and logic.
+
+# Conclusion and Overall Summary
+
+This file structure is designed to support seamless matching of development tasks with the project’s objectives. By dividing the project into clearly labeled directories for pages, components, static assets, and configuration files, we ensure that every piece of the application has a specific place to live. This organization not only speeds up development but also enhances collaboration, allowing team members to work together efficiently. The emphasis on configuration and documentation further differentiates our project, providing clarity and scalability. Overall, a well-planned file structure is essential for maintaining a clean and efficient codebase that meets our project needs — from Twitter OAuth login to AI-based tweet generation and secure data handling.
