@@ -2,12 +2,14 @@
   <a href="https://github.com/alcademyorg">
     <img src="public/alcademy-logo.png" alt="Alcademy Logo" width="200">
   </a>
+
+  <h1>Alcademy Starter Kit</h1>
+
+  <p>
+    A modern web application starter template built with Next.js 14, featuring authentication, database integration.
+  </p>
 </div>
-
-
-# CodeGuide Starter Lite
-
-A modern web application starter template built with Next.js 14, featuring authentication, database integration.
+<br>
 
 ## Tech Stack
 
